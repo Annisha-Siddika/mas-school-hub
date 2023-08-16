@@ -27,3 +27,19 @@
         transform: translateY(10px);
     }
 }
+.about_img:after{
+content: "";
+position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
+}
+.about_img:hover:after {
+    opacity: 1;
+}

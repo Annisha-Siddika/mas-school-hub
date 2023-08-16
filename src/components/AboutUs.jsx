@@ -21,15 +21,17 @@ const AboutUs = () => {
                         </p>
             </div>
                 <div className="flex flex-col md:flex-row items-center justify-center">
-                    <div className="md:w-1/2 md:mr-8">
-                        <Image
-                        className='rounded-lg'
-                            src="/images/about-image.jpg"
-                            alt="About Us Image"
-                            width={500}
-                            height={400}
-                        />
-                    </div>
+                <div className="md:w-1/2 md:mr-8 relative group">
+    <Image
+        className="rounded-lg w-full"
+        src="/images/about-image.jpg"
+        alt="About Us Image"
+        width={500}
+        height={400}
+    />
+    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-lg"></div>
+</div>
+
                     <div className="md:w-1/2 md:ml-8 mt-6 md:mt-0">
                         
                     <Accordion>

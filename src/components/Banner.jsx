@@ -12,15 +12,14 @@ const Banner = () => {
                     Get Started
                 </button>
             </div>
-            
-            <div className="absolute inset-0">
-                <Image
-                    src="/images/banner-image.jpg"
-                    alt="Banner Image"
-                    layout="fill"
-                    objectFit="cover"
-                />
-            </div>
+
+            <Image
+            className='absolute inset-0 object-cover h-full'
+    src="/images/banner-image.jpg"
+    alt="Banner Image"
+    width={1920}
+    height={1080}
+/>
         </section>
     );
 };

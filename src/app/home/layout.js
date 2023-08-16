@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 export default function Layout({ children }) {
     const pathName = usePathname();
     return (
-        <html lang="en">
-            <body>
+       
+            <div>
                 <div>
                     {
                         pathName === "/home" && <TopNav />
@@ -15,8 +15,7 @@ export default function Layout({ children }) {
                     <Navbar />
                 </div>
                 {children}
-            </body>
-        </html>
+            </div>
     )
 }
 

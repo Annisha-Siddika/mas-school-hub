@@ -2,6 +2,7 @@
 import AboutUs from '@/components/AboutUs';
 import Banner from '@/components/Banner'
 import Facility from '@/components/Facility'
+import MainCourse from '@/components/MainCourse';
 import React from 'react';
 
 const page = () => {
@@ -13,6 +14,7 @@ const page = () => {
                     <Facility />
                 </div>
                     <AboutUs/>
+                    <MainCourse/>
 
             </div>
         </div>
